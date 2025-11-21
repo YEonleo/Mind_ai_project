@@ -1,0 +1,43 @@
+{
+  "task_id": 2,
+  "mode": "enhanced",
+  "run_id": 0,
+  "question": "The attached spreadsheet contains the sales of menu items for a regional fast-food chain. Which city had the greater total sales: Wharvton or Algrimand?",
+  "file_name": "7cc4acfa-63fd-4acc-a1a1-e8e529e0a97f.xlsx",
+  "final_answer": "mock enhanced answer for The attached spreadsheet contains the sales of menu items for a regional fast-food chain. Which city had the greater total sales: Wharvton or Algrimand?.",
+  "judgment": "answered",
+  "trajectory": [
+    {
+      "step": 1,
+      "thought": "Thought: I should query the spreadsheet using the question.\nAction: xlsx_query(\"test/7cc4acfa-63fd-4acc-a1a1-e8e529e0a97f.xlsx\", \"The attached spreadsheet contains the sales of menu items for a regional fast-food chain. Which city had the greater total sales: Wharvton or Algrimand?\")",
+      "action": {
+        "tool": "xlsx_query",
+        "input": {
+          "path": "test/7cc4acfa-63fd-4acc-a1a1-e8e529e0a97f.xlsx",
+          "query": "The attached spreadsheet contains the sales of menu items for a regional fast-food chain. Which city had the greater total sales: Wharvton or Algrimand?"
+        }
+      },
+      "observation": {
+        "raw_query": "The attached spreadsheet contains the sales of menu items for a regional fast-food chain. Which city had the greater total sales: Wharvton or Algrimand?",
+        "sheets": [
+          {
+            "sheet": "Sheet1",
+            "type": "location_total_sales",
+            "location_totals": {
+              "Wharvton": 12055.0,
+              "Algrimand": 11907.0
+            }
+          }
+        ]
+      },
+      "retrieved_rules": []
+    },
+    {
+      "step": 2,
+      "thought": "Thought: I have seen the tool result.\nAnswer: mock enhanced answer for The attached spreadsheet contains the sales of menu items for a regional fast-food chain. Which city had the greater total sales: Wharvton or Algrimand?.",
+      "action": null,
+      "observation": null,
+      "retrieved_rules": []
+    }
+  ]
+}
