@@ -14,9 +14,18 @@
 
 ## 2. 프로젝트 구조
 
-. ├── agent_baseline.py # Baseline 에이전트 (ReAct + Reflection) ├── agent_enhanced.py # Enhanced 에이전트 (ReasoningBank + ReAct + Reflection) ├── reasoning_bank.py # ReasoningBank 클래스 (규칙 저장 및 검색 로직) ├── prompt_templates.py # 에이전트 프롬프트 템플릿 정의 ├── tools.py # python_exec, xlsx_query 도구 구현 ├── run_baseline.py # Baseline 모드 실행 스크립트 ├── run_enhanced.py # Enhanced 모드 실행 스크립트 ├── run.sh # 전체 과제 실행 쉘 스크립트 ├── test/ # 과제 파일 폴더 (사전과제.json 및 첨부 파일 포함) └── memory/ # ReasoningBank 규칙 파일 저장소 (bank.json)
-
-
+```text
+.
+├── agent_baseline.py         # Baseline 에이전트 (ReAct + Reflection)
+├── agent_enhanced.py         # Enhanced 에이전트 (ReasoningBank + ReAct + Reflection)
+├── reasoning_bank.py         # ReasoningBank 클래스 (규칙 저장 및 검색 로직)
+├── prompt_templates.py       # 에이전트 프롬프트 템플릿 정의
+├── tools.py                  # python_exec, xlsx_query 도구 구현
+├── run_baseline.py           # Baseline 모드 실행 스크립트
+├── run_enhanced.py           # Enhanced 모드 실행 스크립트
+├── run.sh                    # 전체 과제 실행 쉘 스크립트
+├── test/                     # 과제 파일 폴더 (사전과제.json 및 첨부 파일 포함)
+└── memory/                   # ReasoningBank 규칙 파일 저장소 (bank.json)
 ---
 
 ## 3. 환경 설정 및 종속성
